@@ -21,12 +21,14 @@ const styles = StyleSheet.create({
     container: {
         // borderColor: "white",
         // borderWidth: 1,
+        width: 80,
+        alignSelf: "center" // 세로 가운데 정렬
     },
     menu: {
         textAlign: "center",
         color: "white",
         fontWeight: "700",
-        fontSize: 17,
+        fontSize: 19,
     },
 });
 

@@ -9,7 +9,7 @@ const SearchFilter = (props) => {
     const [selected, setItem] = useState('')
     const options = ["날짜", "지역", "경기장", "팀"]
     const dynamicStyle = {
-        height: selected === '' ? '5%' : '11%'
+        height: selected === '' ? '5%' : '10%'
     }
 
     const _onTouch = (e) => {
@@ -34,7 +34,7 @@ const styles = StyleSheet.create({
     container: {
         position: "absolute",
         top: 40,
-        alignItems: 'center',
+        alignItems: 'center',// 가로 가운데 정렬
         width: "100%",
         fontWeight: "600",
         zIndex: 99,
@@ -42,8 +42,9 @@ const styles = StyleSheet.create({
     },
     line: {
         flexDirection: 'row',
-        height: 40,
-        alignItems: "center"
+        flex: 1,
+        // borderColor: "white",
+        // borderWidth: 1,
     }
 });
 
